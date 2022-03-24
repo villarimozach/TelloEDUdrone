@@ -1,7 +1,7 @@
 # Started from Tello Template
 # This Python app is in the Public domain
 # Some parts from Tello3.py
-
+#E1D
 import threading, socket, sys, time, subprocess
 
 
@@ -43,6 +43,23 @@ recvThread.start()
 
 # CREATE FUNCTIONS HERE....
 
+def Pentagon():#creates a pentagon
+    sendmsg('up 75')
+    for i in range(5):
+        sendmsg('forward 100',8)
+        sendmsg('ccw 72',8)
+
+def square():#creates a square
+    sendmsg('up 75')
+    for i in range(4):
+        sendmsg('forward 100',8)
+        sendmsg('ccw 90',8)
+
+def triangle():#creates a triangle
+    sendmsg('up 75')
+    for i in range(3):
+        sendmsg('forward 100',8)
+        sendmsg('cw 120',8)
 
 print("\nZachary Villarimo")
 print("Flight School - Square: ")
@@ -59,8 +76,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        triangle()
 
         sendmsg('land')
 
