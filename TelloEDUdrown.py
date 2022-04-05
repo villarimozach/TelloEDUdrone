@@ -75,8 +75,10 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
+        sendmsg("speed 20")
+        sendmsg("rc -5 55 30 0")
 
-        triangle()
+
 
         sendmsg('land')
 
