@@ -59,8 +59,9 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
         sendmsg("speed 50",8)
-        sendmsg("rc -5 30 23 0",8)
-        sendmsg("rc -5 30 23 0")
+        sendmsg("rc -8 30 21 0",8)
+        sendmsg("rc -8 15 23 0")
+        sendmsg("curve -25 25 0 -25 75 0 50")
         sendmsg('land')
 
         print('\nGreat Flight!!!')
