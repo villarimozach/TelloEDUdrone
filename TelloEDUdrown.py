@@ -58,11 +58,13 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
-        sendmsg("speed 50",8)
-        sendmsg("rc -10 30 21 0",8)
+        sendmsg("speed 75",8)
+        sendmsg("rc -10 30 19 0",8)
         sendmsg("rc -10 20 23 0",8)
-        sendmsg("curve 75 150 0 10 330 0 50")
+        sendmsg("curve 110 125 0 10 280 0 75" ,8)
         sendmsg("rc 0 -30 -10 0")
+m
+
         sendmsg('land')
 
         print('\nGreat Flight!!!')
